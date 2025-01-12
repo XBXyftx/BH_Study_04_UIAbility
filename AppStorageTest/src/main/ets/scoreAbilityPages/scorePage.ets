@@ -1,4 +1,5 @@
 import { IUserInfo } from '../pages/Index'
+import { addScore } from '../utils/addScore'
 
 @Entry
 @Component
@@ -11,19 +12,19 @@ struct ScorePage {
 
   build() {
     Column() {
-      Text('积分广场')
+      Text('积分广场 '+this.user.score)
         .fontSize(50)
       Button('攒积分 +50')
         .onClick(() => {
-          this.user.score += 50
+          addScore(50)
         })
       Button('+20')
         .onClick(() => {
-          this.user.score += 20
+          addScore(20)
         })
       Button('+1')
         .onClick(() => {
-          this.user.score += 1
+          addScore(1)
         })
     }
     .height('100%')
