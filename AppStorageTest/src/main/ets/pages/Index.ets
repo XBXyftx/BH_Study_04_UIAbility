@@ -9,22 +9,27 @@ let userInfo:IUserInfo = {
   age:30,
   score:500
 }
-AppStorage.setOrCreate('userInfo',userInfo)
+AppStorage.setOrCreate('user',userInfo)
 
 @Entry
 @Component
 struct Index {
   //1. 获取上下文对象(后续直接使用)对象中包含了跳转方法，跨UI Ability的跳转方法
   context = getContext(this) as common.UIAbilityContext;
+  @StorageLink('user') user:IUserInfo={
+    name:'',
+    age:0,
+    score:0
+  }
   build() {
     Column(){
       Text('个人中心')
         .fontSize(40)
-      Text('姓名: 小张')
+      Text(`姓名: ${this.user.name}`)
         .fontSize(20)
-      Text('年纪: 20')
+      Text(`年纪: ${this.user.age}`)
         .fontSize(20)
-      Text('积分: 100')
+      Text(`积分: ${this.user.score}`)
         .fontSize(20)
       Button('去积分广场')
         .onClick(()=>{
