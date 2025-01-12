@@ -9,8 +9,8 @@ let userInfo:IUserInfo = {
   age:30,
   score:500
 }
-AppStorage.setOrCreate('user',userInfo)
-
+// AppStorage.setOrCreate('user',userInfo)
+PersistentStorage.persistProp('user',userInfo)
 @Entry
 @Component
 struct Index {
