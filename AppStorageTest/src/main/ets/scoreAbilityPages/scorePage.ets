@@ -1,18 +1,14 @@
 @Entry
 @Component
 struct ScorePage {
-  @State message: string = 'Hello World';
 
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('ScorePageHelloWorld')
+    Column(){
+      Text('积分广场')
         .fontSize(50)
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
+      Button('攒积分 +50')
+      Button('+20')
+      Button('+1')
     }
     .height('100%')
     .width('100%')
