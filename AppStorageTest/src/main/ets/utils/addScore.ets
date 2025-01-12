@@ -7,6 +7,12 @@ import { IUserInfo } from '../pages/Index'
 //   AppStorage.set<IUserInfo>('user',user)
 // }
 
+// interface IUserInfo {
+//   name:string,
+//   age:number,
+//   score:number
+// }
+
 export function addScore(addScoreNum:number) {
   let linkUser:SubscribedAbstractProperty<IUserInfo> = AppStorage.link('user')
   if (linkUser.get().score) {
