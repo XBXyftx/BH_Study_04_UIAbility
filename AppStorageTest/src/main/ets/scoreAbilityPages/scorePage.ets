@@ -22,9 +22,9 @@ struct ScorePage {
         .onClick(() => {
           addScore(20)
         })
-      Button('+1')
+      Button('-1')
         .onClick(() => {
-          addScore(1)
+          addScore(-1)
         })
     }
     .height('100%')
