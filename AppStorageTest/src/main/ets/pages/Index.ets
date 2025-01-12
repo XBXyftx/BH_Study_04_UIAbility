@@ -1,5 +1,5 @@
 import { common, Want } from '@kit.AbilityKit';
-interface IUserInfo {
+export interface IUserInfo {
   name:string,
   age:number,
   score:number
