@@ -1,0 +1,6 @@
+{
+  "src": [
+    "pages/Index",
+    "scoreAbilityPages/scorePage"
+  ]
+}

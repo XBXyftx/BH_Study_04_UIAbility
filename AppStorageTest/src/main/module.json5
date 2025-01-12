@@ -1,0 +1,37 @@
+{
+  "module": {
+    "name": "AppStorageTest",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "AppStorageTestAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "AppStorageTestAbility",
+        "srcEntry": "./ets/appstoragetestability/AppStorageTestAbility.ets",
+        "description": "$string:AppStorageTestAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:AppStorageTestAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      },
+      {
+        "name": "ScoreAbility",
+        "srcEntry": "./ets/scoreability/ScoreAbility.ets",
+        "description": "$string:ScoreAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:ScoreAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      }
+    ]
+  }
+}

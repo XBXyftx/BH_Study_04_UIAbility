@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "AppStorageTestAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "AppStorageTestAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "ScoreAbility1_desc",
+      "value": "description"
+    },
+    {
+      "name": "ScoreAbility1_label",
+      "value": "label"
+    },
+    {
+      "name": "ScoreAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "ScoreAbility_label",
+      "value": "label"
+    }
+  ]
+}
