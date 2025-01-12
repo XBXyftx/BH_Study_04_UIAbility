@@ -1,4 +1,15 @@
 import { common, Want } from '@kit.AbilityKit';
+interface IUserInfo {
+  name:string,
+  age:number,
+  score:number
+}
+let userInfo:IUserInfo = {
+  name:'A',
+  age:30,
+  score:500
+}
+AppStorage.setOrCreate('userInfo',userInfo)
 
 @Entry
 @Component
