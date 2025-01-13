@@ -4,10 +4,11 @@ export interface PTest {
   num: number
 }
 
-let p: PTest = {
-  num: 10
-}
-PersistentStorage.persistProp('Test', p)
+let p: PTest[] = [
+  { num: 10 },
+  { num: 20 }
+]
+PersistentStorage.persistProp<PTest[]>('Test', p)
 
 @Entry
 @Component

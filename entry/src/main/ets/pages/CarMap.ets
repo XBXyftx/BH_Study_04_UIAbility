@@ -4,15 +4,16 @@ import { PTest } from './Index';
 @Component
 struct CarMap {
   @State message: string = 'Hello World';
-  @StorageLink('Test') test: PTest = { num: 0 }
+  @StorageLink('Test') test: PTest[] =[]
   build() {
     Column(){
       Text('地图打车')
         .fontSize(30)
-      Text(this.test.num.toString())
+      Text(this.test[0].num+'')
       Button('++')
         .onClick(()=>{
-          this.test.num++
+          this.test[0].num++
+          this.test.splice(0,1,this.test[0])
         })
     }
     .height('100%')
